@@ -1,0 +1,5 @@
+# available at site.data.nav
+- name: Index
+  link: /
+- name: About
+  link: /about.html
