@@ -2,11 +2,13 @@
 layout: default
 ---
 
-<li>
+<div id="pantry">
+    <div class="container">
     {% for item in site.data.pantry %}
         <ul>
             <img src="{{ item.img }}" />
             <h1>{{ item.name }} </h1>
         </ul>
     {% endfor %}
-</li>
+    </div>
+</div>
