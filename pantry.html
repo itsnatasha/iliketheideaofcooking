@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<li>
+    {% for item in site.data.pantry %}
+        <ul>
+            <img src="{{ item.img }}" />
+            <h1>{{ item.name }} </h1>
+        </ul>
+    {% endfor %}
+</li>

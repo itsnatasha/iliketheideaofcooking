@@ -1,0 +1,12 @@
+# available at site.data.pantry
+# category options: fruit, vegetables, grains, protein, dairy, condiment
+- name: gouda
+  amount: <1 block
+  category: dairy
+  specifics: cheese
+  img: https://m.media-amazon.com/images/I/81wbMTJ6wYL.jpg
+- name: gochujang
+  amount: < tub full
+  category: condiment
+  specifics: spicy
+  img: 
