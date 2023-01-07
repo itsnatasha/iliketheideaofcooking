@@ -1,15 +1,29 @@
 ---
 layout: default
 custom_css: pantry
+counter: 1
 ---
 
 <div id="pantry">
     <div class="container">
-    {% for item in site.data.pantry %}
-        <ul>
-            <img src="{{ item.img }}" />
-            <h1>{{ item.name }} </h1>
-        </ul>
+    {% for food in site.data.pantry %}
+        <div class="row">
+            <div class="col-md-1">
+                {% if {% increment counter %} < 10}
+            </div>
+            <div class="col">
+                {{ food.name }}
+                {{ food.category }}
+                {{ food.specifics }}
+            </div>
+            <div class="col">
+                {{ food.amount }}
+            </div>
+            <div class="col">
+                <!--<img src="{{ food.img }}" />-->
+                {{ food.img }}
+            </div>
+        </div>
     {% endfor %}
     </div>
 </div>
