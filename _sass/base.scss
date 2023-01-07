@@ -1,11 +1,46 @@
 // default layouts will have this styling
 // this will be the styling for recipe pages
 
-// make id for navigation, so the styles are only used for nav
-#nav {
-    
+// base should have
+// > colors
+// > fonts
+// > tooltip
+// > link styling
+// > headings, paragraphs
+// > lists (ul, ol)
+// > table properties
+
+$font: 'Fira Code', monospace;
+
+//theme colors :
+$white: #fff;
+$black: #161616;
+$grey: #bbb;
+$beige: #DCD0BF;
+
+
+body {
+
+    font: 100% $font;
+
+    h1, h2, h3, h4 {
+
+    }
+
+    a {
+
+    }
+
+    ul {
+
+    }
+
+    blockquote {
+
+    }
 }
 
+/*
 body {
     width: 100%;
     height: 100vh;
@@ -25,4 +60,4 @@ body {
   h1 {
     text-align: center;
     color: gray;
-  }
+  }*/
