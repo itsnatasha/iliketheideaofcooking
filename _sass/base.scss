@@ -16,13 +16,27 @@ $font: 'Fira Code', monospace;
 $white: #fff;
 $black: #161616;
 $grey: #bbb;
-$beige: #DCD0BF;
+$beige: #f7f3ee;
+
+$colors: (
+  white: $white,
+  black: $black,
+  grey: $grey,
+  beige: $beige,
+);
+
+@each $key, $val in $colors {
+  .bg-#{$key} {
+    background-color: $val;
+  }
+}
 
 
 body {
 
     font: 100% $font;
-    font-size: 1.0rem;
+    font-size: 0.8rem;
+    color: $black;
 
     h1, h2, h3, h4 {
 
