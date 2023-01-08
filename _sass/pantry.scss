@@ -1,7 +1,11 @@
 #pantry {
-    
-    .col {
-        border: 1px solid #000;
+
+    .container {
+        .col {
+            border: 1px solid #000;
+            padding: 10px 15px;
+            box-sizing: border-box;
+        }
     }
 
     .w-100 {
