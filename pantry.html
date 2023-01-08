@@ -1,29 +1,34 @@
 ---
 layout: default
-custom_css: pantry
+custom_css: cupboard
 counter: 0
 ---
 
+<!--{% increment counter %}
+To make sure list starts with "1"-->
+
 <div id="pantry">
-    <div class="container">
-    {% for food in site.data.pantry %}
-        <div class="row">
-            <div class="col-1">
-                {% increment counter %}
-            </div>
-            <div class="col">
-                {{ food.name }}
-                {{ food.category }}
-                {{ food.specifics }}
-            </div>
-            <div class="col">
-                {{ food.amount }}
-            </div>
-            <div class="col">
-                <!--<img src="{{ food.img }}" />-->
-                {{ food.img }}
-            </div>
-        </div>
-    {% endfor %}
-    </div>
+    <table class="table mx-auto table-hover">
+        {% for food in site.data.pantry %}
+            <tr>
+                <td class="col-sm-1">
+                    {% increment counter %}
+                </td>
+                <td class="bold col-md-2">
+                    {{ food.name }}
+                </td>
+                <td class="bg-beige col-md-1">
+                    <span class="tag bg-beige">
+                        {{ food.category }}
+                    </span>
+                </td>
+                <td class="col-md-1">
+                    {{ food.specifics }}
+                </td>
+                <td class="col-md-1"> 
+                    {{ food.amount }}
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
 </div>

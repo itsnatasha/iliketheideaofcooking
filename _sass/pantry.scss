@@ -1,14 +1,35 @@
 #pantry {
 
-    .container {
-        .col {
-            border: 1px solid #000;
-            padding: 10px 15px;
-            box-sizing: border-box;
+    table {
+        width: 60%;
+        tr {
+            padding: 10px;
         }
+
+        td {
+            border: 1px solid $black;
+            padding: 4px 10px;
+        }
+    }
+
+    .table-hover tbody tr:hover td {
+        background: $beige;
     }
 
     .w-100 {
         width: 100%;
+    }
+
+    .mx-auto {
+        margin: 0px auto;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    .tag {
+        border-radius: 10px;
+        padding: 2px 7px;
     }
 }
