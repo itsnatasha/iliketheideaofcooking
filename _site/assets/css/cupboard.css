@@ -19,6 +19,13 @@ body {
   font-size: 0.8rem;
   color: #161616;
 }
+body h1 {
+  font-size: 2rem;
+}
+body a {
+  color: #bbb;
+}
+
 /*
 body {
     width: 100%;
